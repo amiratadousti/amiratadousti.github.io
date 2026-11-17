@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirata Dousti | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            direction: ltr;
+            text-align: left;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-accent {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+        }
+        .profile-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 24px auto;
+        }
+        .profile-ring {
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+            border-radius: 50%;
+            z-index: 0;
+            animation: spin 4s linear infinite;
+            filter: blur(8px);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        .profile-container:hover .profile-ring {
+            opacity: 1;
+            filter: blur(12px);
+        }
+        .profile-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 1;
+            border: 4px solid #0f172a;
+            background-color: #1e293b;
+        }
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500 selection:text-white pb-20">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-bold text-2xl tracking-tighter">
+                <span class="text-white">A.</span><span class="text-blue-500">D</span>
+            </div>
+            <div class="flex gap-6 text-gray-400">
+                <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-github text-xl"></i></a>
+                <a href="mailto:contact@atadousti.me" class="hover:text-white transition-colors duration-300"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Center Aligned) -->
+    <header class="pt-40 pb-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <!-- Internship & Student Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-blue-400 mb-8 border border-blue-500/30">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                </span>
+                University Student | Actively seeking Management & Ideation Internships
+            </div>
+
+            <!-- Profile Picture Placeholder -->
+            <div class="profile-container">
+                <div class="profile-ring"></div>
+                <!-- Replace the src below with your actual image link -->
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Amirata Dousti" class="profile-img">
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Hi, I'm <br class="md:hidden"/> <span class="text-gradient">Amirata Dousti</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-4 font-light">
+                Content Coordinator, Strategy Enthusiast & Ideator
+            </p>
+            <p class="text-md text-gray-500 mb-10 flex items-center justify-center gap-2">
+                <i class="fas fa-map-marker-alt text-blue-500"></i> Based in Rzeszów, Poland
+            </p>
+            <a href="#contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300 hover:scale-105">
+                Get in Touch <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content (Left Aligned) -->
+    <main class="max-w-4xl mx-auto px-6 space-y-32 text-left">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-8 h-1 bg-gradient-accent rounded-full"></span>
+                Executive Summary
+            </h2>
+            <div class="glass-panel p-8 rounded-2xl">
+                <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                    As a university student based in Rzeszów, Poland, I blend creative vision with strategic thinking. I have learned how to transform raw concepts into executable projects and am now ready to apply these skills in a professional corporate environment. 
+                </p>
+                <p class="text-gray-300 leading-relaxed text-lg mb-8">
+                    My drive for innovation started early; during high school, I proactively participated in regional and national competitions across blogging, graphic design, and marketing, securing multiple awards. This self-starter attitude has shaped my belief that effective teamwork and organized processes are the core drivers of any successful project.
+                </p>
+                
+                <div class="mt-8 border-t border-white/10 pt-8">
+                    <h3 class="text-xl font-semibold mb-6 text-white">Linguistic Proficiency</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold">FA</div>
+                            <div>
+                                <h4 class="text-white font-medium">Persian</h4>
+                                <p class="text-sm text-gray-400">Native</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold">TR</div>
+                            <div>
+                                <h4 class="text-white font-medium">Turkish</h4>
+                                <p class="text-sm text-gray-400">Native</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 font-bold">EN</div>
+                            <div>
+                                <h4 class="text-white font-medium">English</h4>
+                                <p class="text-sm text-gray-400">Professional (B2)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="w-8 h-1 bg-gradient-accent rounded-full"></span>
+                Professional Experience
+            </h2>
+            
+            <div class="relative border-l-2 border-gray-800 ml-3 md:ml-0 space-y-12">
+                
+                <!-- Freelance Content Manager -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.6)]"></div>
+                    <div class="glass-panel p-6 rounded-2xl hover:border-blue-500/30 transition-colors duration-300">
+                        <span class="text-sm font-semibold text-blue-400 tracking-wider uppercase">Recent</span>
+                        <h3 class="text-2xl font-bold text-white mt-2">Content Coordinator & Video Strategist</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">Independent / Freelance for YouTube Creators</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex gap-2"><i class="fas fa-check text-blue-500 mt-1 text-sm"></i> Managed the end-to-end content production cycle for prominent entertainment and vlog channels.</li>
+                            <li class="flex gap-2"><i class="fas fa-check text-blue-500 mt-1 text-sm"></i> Collaborated closely with creators to conceptualize ideas, ensuring alignment with target audience trends.</li>
+                            <li class="flex gap-2"><i class="fas fa-check text-blue-500 mt-1 text-sm"></i> Oversaw video editing workflows, maintaining strict publication schedules and high retention rates.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ApplyAZ -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-700"></div>
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white">Content Coordinator & Ideator</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">ApplyAZ</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex gap-2"><i class="fas fa-check text-gray-500 mt-1 text-sm"></i> Directed digital media projects and executed video strategies to enhance brand visibility.</li>
+                            <li class="flex gap-2"><i class="fas fa-check text-gray-500 mt-1 text-sm"></i> Facilitated team brainstorming sessions to generate innovative marketing campaigns.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zoomit -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-700"></div>
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white">Technology Writer</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">Zoomit</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex gap-2"><i class="fas fa-check text-gray-500 mt-1 text-sm"></i> Authored comprehensive Persian articles on emerging tech trends and product reviews.</li>
+                            <li class="flex gap-2"><i class="fas fa-check text-gray-500 mt-1 text-sm"></i> Translated complex technological concepts into engaging, accessible content for a broad audience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Startup Ideator -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-700"></div>
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <span class="text-sm font-semibold text-gray-500 tracking-wider uppercase">2019 - 2023</span>
+                        <h3 class="text-2xl font-bold text-white mt-2">Concept Developer & Contributor</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">Various Emerging Startups</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex gap-2"><i class="fas fa-check text-gray-500 mt-1 text-sm"></i> Contributed proactive ideas and conceptual frameworks for early-stage startup projects.</li>
+                            <li class="flex gap-2"><i class="fas fa-check text-gray-500 mt-1 text-sm"></i> Demonstrated early leadership and strategic thinking through active participation in collaborative teams.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Photography Section -->
+        <section id="photography">
+            <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                <span class="w-8 h-1 bg-gradient-accent rounded-full"></span>
+                Photography & Creative Vision
+            </h2>
+            <p class="text-gray-400 mb-8 text-lg">A personal passion that sharpens my attention to detail and visual storytelling.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] glass-panel">
+                    <img src="https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?auto=format&fit=crop&w=800&q=80" alt="Photography 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-medium tracking-widest uppercase">Visual Arts</span>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] glass-panel">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Photography 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-medium tracking-widest uppercase">Perspective</span>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] glass-panel">
+                    <img src="https://images.unsplash.com/photo-1554046920-90dcac823ba5?auto=format&fit=crop&w=800&q=80" alt="Photography 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-medium tracking-widest uppercase">Details</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="pt-10">
+            <div class="glass-panel p-10 rounded-3xl relative overflow-hidden text-center">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full filter blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+                
+                <h2 class="text-4xl font-bold mb-4 text-white relative z-10">Let's Work Together</h2>
+                <p class="text-gray-400 mb-10 text-lg max-w-2xl mx-auto relative z-10">
+                    I am actively seeking internship opportunities in management and ideation. If you are looking for a motivated student with a strategic mindset, I'd love to connect.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-6 relative z-10">
+                    <a href="mailto:contact@atadousti.me" class="glass-panel hover:bg-white/5 border border-white/10 px-8 py-5 rounded-2xl flex items-center justify-center gap-4 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm text-gray-500 uppercase tracking-wider">Email Me</p>
+                            <p class="text-white font-medium text-lg">contact@atadousti.me</p>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+48723448935" class="glass-panel hover:bg-white/5 border border-white/10 px-8 py-5 rounded-2xl flex items-center justify-center gap-4 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-phone text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm text-gray-500 uppercase tracking-wider">Call Me</p>
+                            <p class="text-white font-medium text-lg">+48 723 448 935</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="mt-8 text-gray-400 flex items-center justify-center gap-2 relative z-10">
+                    <i class="fas fa-map-marker-alt text-blue-500"></i>
+                    <span>Currently based in Rzeszów, Poland (Available for remote & hybrid roles)</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-32 border-t border-white/10 pt-10 pb-10 text-center text-gray-500">
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="#" class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin text-2xl"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i class="fab fa-github text-2xl"></i></a>
+        </div>
+        <p>© 2024 Amirata Dousti. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
