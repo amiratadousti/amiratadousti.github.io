@@ -1,27 +1,391 @@
-<!-- Zoomit -->
-<div class="relative pl-8 md:pl-12">
-    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.6)]"></div>
-    <div class="glass-panel p-6 rounded-2xl hover:border-blue-500/30 transition-colors duration-300">
-        <span class="text-sm font-semibold text-blue-400 tracking-wider uppercase">1.5 Years • High-Volume Tech Media</span>
-        <h3 class="text-2xl font-bold text-white mt-2">Technology Writer & Content Creator</h3>
-        <h4 class="text-lg text-gray-400 mb-4">
-            <a href="https://www.zoomit.ir/author/8bba36c0-9b09-4c9c-90be-3758997e628e/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline underline-offset-4 inline-flex items-center gap-1.5">
-                Zoomit <i class="fas fa-external-link-alt text-xs"></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amirata Dousti — Computer Science student at UITM Rzeszów, tech writer (443+ articles, 3.26M+ views), video editor, and digital content creator targeting internships in Rzeszów.">
+    <title>Amirata Dousti | Tech Content, Digital Media & CS Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            direction: ltr;
+            text-align: left;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.72);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-accent {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+        }
+        .profile-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 24px auto;
+        }
+        .profile-ring {
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+            border-radius: 50%;
+            z-index: 0;
+            animation: spin 4s linear infinite;
+            filter: blur(8px);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        .profile-container:hover .profile-ring {
+            opacity: 1;
+            filter: blur(12px);
+        }
+        .profile-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 1;
+            border: 4px solid #0f172a;
+            background-color: #1e293b;
+        }
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500 selection:text-white pb-20">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-2xl tracking-tighter">
+                <span class="text-white">A.</span><span class="text-blue-500">D</span>
             </a>
-        </h4>
-        <ul class="space-y-3 text-gray-300 leading-relaxed">
-            <li class="flex items-start gap-2.5">
-                <i class="fas fa-check text-blue-500 mt-1.5 text-sm shrink-0"></i>
-                <span>Published <strong class="text-white font-semibold">443 technology articles</strong> on digital trends, hardware, and software for a broad readership.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-                <i class="fas fa-check text-blue-500 mt-1.5 text-sm shrink-0"></i>
-                <span>Generated <strong class="text-white font-semibold">3,263,347+ views</strong> by turning complex tech topics into clear, engaging stories.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-                <i class="fas fa-check text-blue-500 mt-1.5 text-sm shrink-0"></i>
-                <span>Sustained fast editorial output and consistent quality in a high-pace digital newsroom.</span>
-            </li>
-        </ul>
-    </div>
-</div>
+            <div class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+                <a href="#about" class="hover:text-white transition-colors">Summary</a>
+                <a href="#skills" class="hover:text-white transition-colors">Capabilities</a>
+                <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="flex gap-5 text-gray-400">
+                <a href="https://linkedin.com/in/amirata-dousti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-white transition-colors duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://github.com/atadousti" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-white transition-colors duration-300"><i class="fab fa-github text-xl"></i></a>
+                <a href="mailto:contact@atadousti.me" aria-label="Email" class="hover:text-white transition-colors duration-300"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-36 pb-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <!-- Internship & Location Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-blue-400 mb-8 border border-blue-500/30">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                </span>
+                B.Sc. Computer Science (UITM) • Open to Internships in Rzeszów
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="profile-container">
+                <div class="profile-ring"></div>
+                <img src="https://github.com/amiratadousti/amiratadousti.github.io/blob/main/atapic.jpg?raw=true" alt="Amirata Dousti" class="profile-img">
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Hi, I'm <br class="md:hidden"/> <span class="text-gradient">Amirata Dousti</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-4 font-light">
+                Tech Content Creator, Video Editor & Computer Science Student
+            </p>
+            <p class="text-md text-gray-400 mb-10 flex items-center justify-center gap-2">
+                <i class="fas fa-map-marker-alt text-blue-500"></i> Based in Rzeszów, Poland • Ready for On-Site / Hybrid Teams
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#experience" class="inline-flex items-center gap-2 bg-white text-black px-7 py-3.5 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300 hover:scale-105">
+                    Explore Experience <i class="fas fa-arrow-down text-sm"></i>
+                </a>
+                <a href="#contact" class="inline-flex items-center gap-2 glass-panel text-white px-7 py-3.5 rounded-full font-semibold border border-white/15 hover:border-blue-400/50 transition-all duration-300">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Key Metrics Strip -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14 text-left">
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="text-2xl md:text-3xl font-extrabold text-white">443</div>
+                    <div class="text-xs md:text-sm text-gray-400 mt-1">Published Tech Articles</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="text-2xl md:text-3xl font-extrabold text-blue-400">3.26M+</div>
+                    <div class="text-xs md:text-sm text-gray-400 mt-1">Article Views Generated</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="text-2xl md:text-3xl font-extrabold text-purple-400">1.5+ Yrs</div>
+                    <div class="text-xs md:text-sm text-gray-400 mt-1">Tech Media & Content</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="text-2xl md:text-3xl font-extrabold text-pink-400">Rzeszów</div>
+                    <div class="text-xs md:text-sm text-gray-400 mt-1">Local CS Student (UITM)</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 space-y-28 text-left">
+
+        <!-- About Section -->
+        <section id="about" class="pt-6">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-8 h-1 bg-gradient-accent rounded-full"></span>
+                Executive Summary
+            </h2>
+            <div class="glass-panel p-8 rounded-2xl">
+                <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                    I am a Computer Science student at the University of Information Technology and Management (UITM) in Rzeszów, combining technical literacy with hands-on experience in technology writing, video editing, visual design, and web presentation. Across 443 published tech articles reaching over 3.26 million views, I have turned fast-moving digital trends and complex technical topics into clear, engaging stories.
+                </p>
+                <p class="text-gray-300 leading-relaxed text-lg mb-8">
+                    Whether supporting digital marketing, content workflows, UX/web initiatives, or commercial category research in a fast-paced environment, I bring ownership, structured execution, and curiosity about how digital products and communities grow — alongside a personal interest in photography.
+                </p>
+
+                <div class="mt-8 border-t border-white/10 pt-8">
+                    <h3 class="text-xl font-semibold mb-6 text-white">Languages</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold">FA</div>
+                            <div>
+                                <h4 class="text-white font-medium">Persian</h4>
+                                <p class="text-sm text-gray-400">Native</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold">TR</div>
+                            <div>
+                                <h4 class="text-white font-medium">Turkish</h4>
+                                <p class="text-sm text-gray-400">Native</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 font-bold">EN</div>
+                            <div>
+                                <h4 class="text-white font-medium">English</h4>
+                                <p class="text-sm text-gray-400">Upper-Intermediate (B2)</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 font-bold">PL</div>
+                            <div>
+                                <h4 class="text-white font-medium">Polish</h4>
+                                <p class="text-sm text-gray-400">Actively Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities & Stack Section -->
+        <section id="skills" class="pt-6">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-8 h-1 bg-gradient-accent rounded-full"></span>
+                Core Capabilities & Tools
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-panel p-6 rounded-2xl border border-white/10">
+                    <div class="text-blue-400 text-xl mb-3"><i class="fas fa-pen-nib"></i></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Content & Storytelling</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Tech & digital writing, trend spotting, audience-focused hooks, campaign ideation, and structured content workflows.
+                    </p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-white/10">
+                    <div class="text-purple-400 text-xl mb-3"><i class="fas fa-film"></i></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Video & Visual Media</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Adobe Premiere Pro, Adobe Photoshop, RAW photo retouching, short-form social edits, and clean visual branding.
+                    </p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-white/10">
+                    <div class="text-pink-400 text-xl mb-3"><i class="fas fa-code"></i></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Web & Digital Execution</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Computer Science coursework, HTML/CSS & GitHub Pages deployment, Webflow/Wix, spreadsheets, and AI-assisted productivity.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="pt-6">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="w-8 h-1 bg-gradient-accent rounded-full"></span>
+                Professional Experience
+            </h2>
+
+            <div class="relative border-l-2 border-gray-800 ml-3 md:ml-0 space-y-12">
+
+                <!-- Zoomit -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.6)]"></div>
+                    <div class="glass-panel p-6 rounded-2xl hover:border-blue-500/30 transition-colors duration-300">
+                        <span class="text-sm font-semibold text-blue-400 tracking-wider uppercase">1.5 Years • High-Volume Tech Media</span>
+                        <h3 class="text-2xl font-bold text-white mt-2">Technology Writer & Content Creator</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">
+                            <a href="https://www.zoomit.ir/author/8bba36c0-9b09-4c9c-90be-3758997e628e/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline underline-offset-4 inline-flex items-center gap-1.5">
+                                Zoomit <i class="fas fa-external-link-alt text-xs"></i>
+                            </a>
+                        </h4>
+                        <ul class="space-y-3 text-gray-300 leading-relaxed">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-blue-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Published <strong class="text-white font-semibold">443 technology articles</strong> on digital trends, hardware, and software for a broad readership.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-blue-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Generated <strong class="text-white font-semibold">3,263,347+ views</strong> by turning complex tech topics into clear, engaging stories.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-blue-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Sustained fast editorial output and consistent quality in a high-pace digital newsroom.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Freelance Content & Video -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-700"></div>
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white">Video Editor, Ideator & Content Creator</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">YouTube Creators & Digital Projects</h4>
+                        <ul class="space-y-3 text-gray-300 leading-relaxed">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-gray-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Conceptualized, structured, and edited videos across tech reviews, vlogs, and entertainment formats.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-gray-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Focused on pacing, viewer retention, and clean visual presentation tailored to platform dynamics.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ApplyAZ -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-700"></div>
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white">Content Creator, Ideator & Video Editor</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">
+                            <a href="https://www.applyaz.com/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline underline-offset-4 inline-flex items-center gap-1.5">
+                                ApplyAZ <i class="fas fa-external-link-alt text-xs"></i>
+                            </a>
+                        </h4>
+                        <ul class="space-y-3 text-gray-300 leading-relaxed">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-gray-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Produced short-form educational and campaign videos to boost clarity and audience engagement.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-gray-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Collaborated on creative concepts and visual assets for digital channels.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Initiatives & Web -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-700"></div>
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <span class="text-sm font-semibold text-gray-400 tracking-wider uppercase">2019 – Present</span>
+                        <h3 class="text-2xl font-bold text-white mt-2">Co-founder, Ideator & Web Builder</h3>
+                        <h4 class="text-lg text-gray-400 mb-4">PersianPol & Can Do</h4>
+                        <ul class="space-y-3 text-gray-300 leading-relaxed">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-gray-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Co-founded <strong class="text-white font-semibold">PersianPol</strong> to support students with university admissions and relocation guidance in Poland.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-check text-gray-500 mt-1.5 text-sm shrink-0"></i>
+                                <span>Built visual branding, digital content, and responsive web pages under <strong class="text-white font-semibold">Can Do</strong> and personal web projects.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="pt-10">
+            <div class="glass-panel p-10 rounded-3xl relative overflow-hidden text-center">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full filter blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+
+                <h2 class="text-4xl font-bold mb-4 text-white relative z-10">Let's Connect</h2>
+                <p class="text-gray-300 mb-10 text-lg max-w-2xl mx-auto relative z-10">
+                    Based in Rzeszów and looking for internship opportunities where tech literacy, content creation, video production, and structured execution add value to a digital team.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center gap-6 relative z-10">
+                    <a href="mailto:contact@atadousti.me" class="glass-panel hover:bg-white/5 border border-white/10 px-8 py-5 rounded-2xl flex items-center justify-center gap-4 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm text-gray-400 uppercase tracking-wider">Email</p>
+                            <p class="text-white font-medium text-lg">contact@atadousti.me</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+48723448935" class="glass-panel hover:bg-white/5 border border-white/10 px-8 py-5 rounded-2xl flex items-center justify-center gap-4 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-phone text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm text-gray-400 uppercase tracking-wider">Phone</p>
+                            <p class="text-white font-medium text-lg">+48 723 448 935</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mt-8 text-gray-400 flex items-center justify-center gap-2 relative z-10">
+                    <i class="fas fa-map-marker-alt text-blue-500"></i>
+                    <span>Rzeszów, Poland • Available for on-site, hybrid & internship roles</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-28 border-t border-white/10 pt-10 pb-10 text-center text-gray-400">
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="https://linkedin.com/in/amirata-dousti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-blue-400 transition-colors"><i class="fab fa-linkedin text-2xl"></i></a>
+            <a href="https://github.com/atadousti" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-white transition-colors"><i class="fab fa-github text-2xl"></i></a>
+            <a href="mailto:contact@atadousti.me" aria-label="Email" class="hover:text-purple-400 transition-colors"><i class="fas fa-envelope text-2xl"></i></a>
+        </div>
+        <p class="text-sm text-gray-500">© 2026 Amirata Dousti. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
